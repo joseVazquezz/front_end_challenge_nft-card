@@ -1,3 +1,4 @@
+
 :root {
     /*COLORS*/
     /* primary */
@@ -7,7 +8,11 @@
     --very-dark-blue-mbg: hsl(217, 54%, 11%);
     --very-dark-blue-cbg: hsl(216, 50%, 16%);
     --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    --font: 'Outfit', sans-serif;
 }
+
 /* CSS RESET */
 * {
     margin: 0;
@@ -19,7 +24,7 @@
     box-sizing: inherit;
   }
 html {
-    @import url(https://fonts.google.com/specimen/Outfit);
+    
     box-sizing: border-box;
     font-size: 62.5%;
 }
@@ -28,19 +33,49 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    color: var(--white);
+    font-family: var(--font);
 }
 /* END OF CSS RESET */
 .card-main {
     background-color: var(--very-dark-blue-cbg);
-    min-height: 60rem;
-    min-width: 50rem;
-    padding: 2%;
+    max-height: 60rem;
+    max-width: 35rem;
+    padding: 2rem;
 }
 .img-section {
     height: auto;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 .img-section img{
-    width: 40rem;
+    width: 100%;
     height: auto;
+}
+
+.info-section  h1{
+    font-weight: 600;
+   
+}
+.info-section p {
+    font-weight: 300;
+    margin: 1rem 0;
+}
+.info-section .info-stat {
+    display: flex;
+   justify-content: space-between;
+  
+   margin-bottom: 2rem;
+   border-bottom: 1px solid  var(--white);
+
+}
+.info-section .info-stat h2 {
+    color: var(--Cyan);
+    font-weight: 600;
+}
+.info-stat img {
+    margin-right: 1rem;
 }
