@@ -1,0 +1,46 @@
+:root {
+    /*COLORS*/
+    /* primary */
+    --soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /* neutral */
+    --very-dark-blue-mbg: hsl(217, 54%, 11%);
+    --very-dark-blue-cbg: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+}
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+html {
+    @import url(https://fonts.google.com/specimen/Outfit);
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+    background-color: var(--very-dark-blue-mbg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* END OF CSS RESET */
+.card-main {
+    background-color: var(--very-dark-blue-cbg);
+    min-height: 60rem;
+    min-width: 50rem;
+    padding: 2%;
+}
+.img-section {
+    height: auto;
+    width: 100%;
+}
+.img-section img{
+    width: 40rem;
+    height: auto;
+}
