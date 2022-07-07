@@ -51,10 +51,29 @@ img {
 }
 .img-section {
     margin-bottom: 2rem;
+    position: relative;
 }
 .img-section img {
     border-radius: 1rem;
-
+    
+}
+.img-section div{
+    background-color: hsl(178, 100%, 50%, 60%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    opacity: 0;
+}
+.img-section div:hover {
+    opacity: 1;
+}
+.img-section div .hover-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -62,6 +81,9 @@ img {
     font-weight: 600;
    color: var(--white);
 
+}
+.info-section h1:hover {
+    color: var(--Cyan);
 }
 .info-section p {
     font-weight: 300;
@@ -103,4 +125,7 @@ img {
 }
 .creator p span {
     color: var(--white);
+}
+.creator p span:hover {
+color: var(--Cyan);
 }
